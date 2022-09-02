@@ -8,6 +8,27 @@ html {
     box-sizing: inherit;
 }
 
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    src: url(https://fonts.gstatic.com/s/lato/v23/S6u9w4BMUTPHh7USSwaPGQ3q5d0N7w.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 300;
+    src: url(https://fonts.gstatic.com/s/oswald/v49/TK3iWkUHHAIjg752FD8Gl-1PK62t.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    font-style: italic;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/playfairdisplay/v30/nuFkD-vYSZviVYUb_rj3ij__anPXDTnohkk7yRZrPJ-M.woff2) format('woff2');
+}
+
 body {
     background-color: #F4F4F4;
 }
@@ -22,11 +43,49 @@ body {
 .left-side {
     display: flex;
     flex-direction: column;
+    
 }
 
 .left-info {
-    height: 200px;
+    height: 600px;
     background-color: #ffff;
     margin-top: 25px;
     width: 45%;
 }
+
+img {
+    height: auto;
+    width: 100%;
+}
+
+h5 {
+    font-family: Lato;
+    font-weight: 300;
+    text-align: center;
+    color: #E17B56;
+    
+}
+
+h3 {
+    font-family: Oswald;
+    font-weight: 300;
+    text-align: center;
+}
+
+p {
+    font-family: Playfair Display;
+    font-weight: 400;
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.continue {
+    background-color: #ffff;
+    color: #E17B56;
+    border: 2px solid #E17B56; 
+    font-family: Lato;
+    font-family: 300;
+
+}
+
