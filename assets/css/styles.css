@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Oswald:wght@300&family=Playfair+Display&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+
+*::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #F4F4F4;
+}
+
+.container {
+    position: relative;
+    min-height: 100vh;
+    width: 80%;
+    margin: 4px auto;   
+}   
+
+.left-side {
+    display: flex;
+    flex-direction: column;
+}
+
+.left-info {
+    height: 200px;
+    background-color: #ffff;
+    margin-top: 25px;
+    width: 45%;
+}
