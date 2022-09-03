@@ -85,7 +85,8 @@ p {
     color: #E17B56;
     border: 2px solid #E17B56; 
     font-family: Lato;
-    font-family: 300;
+    font-weight: 300;
+    margin-left: 37%;
 
 }
 
