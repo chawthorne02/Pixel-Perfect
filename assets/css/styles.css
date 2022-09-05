@@ -154,6 +154,11 @@ p {
     margin-bottom: 50px;
 }
 
+.continuebtn:hover {
+    color: #fff;
+    background-color: #E58566;
+}
+
 .side-info {
     width: 115%;
     background-color: #F4F4F4;
@@ -235,6 +240,13 @@ p {
     width: 26px;
     padding-top: 8px;
 }
+
+.profile-pic .social-links li:hover{
+    background-color: #E58566;
+    color: #fff;
+    margin-right: 5px;
+}
+
 
 .popular-bar {
     width: 100%;
@@ -329,6 +341,26 @@ p {
     color: #C5C5C5;
     font-size: small;
 
+}
+
+.page-navbuttons {
+    display: flex;
+    width: 100%;
+    padding-top: 54px;
+    gap: 7px;
+}
+
+.page-navbuttons .buttons {
+    border: solid 1px #A3A3A3;
+    width: 34px;
+    height: 100%;
+    background-color: #fff;
+    font-family: Oswald;
+}
+
+.page-navbuttons .buttons:hover {
+    background-color: #E58566;
+    color: #fff;
 }
 
 
