@@ -363,5 +363,31 @@ p {
     color: #fff;
 }
 
+.footer-content {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background-color: #fff;
+    margin-top: 27px;
+}
 
+.footer-content h2 {
+    font-family: Oswald;
+    font-weight: 500;
+}
 
+.footer-pics ul {
+    display: flex;
+    list-style: none;
+    margin-top: 0px;
+    margin-bottom: -4px;
+}
+
+.footer-pics img {
+    width: 200px;
+    height: 200px;
+}
+
+.image-line {
+    flex-grow: 1;
+}
