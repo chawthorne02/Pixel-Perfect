@@ -391,3 +391,29 @@ p {
 .image-line {
     flex-grow: 1;
 }
+
+.ig-feed {
+    width: 100%;
+    margin-top: 40px;
+    background-color: #FFFFFF;
+    border: 1px solid #E7E7E7;
+}
+
+.ig-images{
+    padding-left: 15px;
+    padding-bottom: 20px;
+}
+
+.ig-feed h2 {
+    text-align: center;
+    font-family: Oswald;
+    font-weight: 300;
+    font-size: large;
+}
+
+.ig-images img {
+    height: 150px;
+    width: 150px;
+    padding: 4px;
+}
+
