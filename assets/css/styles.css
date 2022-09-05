@@ -184,3 +184,71 @@ p {
     margin-right: 21px;
 }
 
+.profile-pic .social-links {
+    padding-right: 14px;
+}
+
+.profile-pic .social-links li {
+    padding-left: 14px;
+    border: solid 1px #C5C5C5;
+    border-radius: 50%;
+    color: #C5C5C5;
+    display: inline-block;
+    height: 24px;
+    width: 26px;
+    padding-top: 8px;
+}
+
+.popular-bar {
+    width: 100%;
+    margin-top: 40px;
+    background-color: #FFFFFF;
+    border: 1px solid #E7E7E7;
+}
+
+.popular-bar h2 {
+    text-align: center;
+}
+
+.ice-cream {
+    height: 200px;
+    width: 300px;
+    padding-left: 24px;
+}
+
+.popular-bar h2 {
+    font-family: Oswald;
+    font-weight: 300;
+    font-size: large;
+    padding-top: 10px;
+}
+
+.popular-bar h3 {
+    font-family: Oswald;
+    font-weight: 300;
+    padding-left: 22px;
+}
+
+.popular-bar p {
+    font-style: italic;
+    color: #C5C5C5;
+    border-bottom: solid 1px #A3A3A3;
+    padding-bottom: 28px;
+}
+
+.popular-bar .llamas-pic {
+    height: 200px;
+    width: 300px;
+    padding-left: 24px;
+}
+
+.popular-bar .pineapple-pic {
+    height: 200px;
+    width: 300px;
+    padding-left: 24px;
+    border-style: none;
+}
+
+
+
+
