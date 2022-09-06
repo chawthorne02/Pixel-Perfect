@@ -90,6 +90,11 @@ header li:hover {
     
 }
 
+.articles h3:hover {
+    color: #E58566;
+    margin-right: 5px;
+}
+
 .article-footer {
     display: flex;
     position: relative;
@@ -115,6 +120,11 @@ header li:hover {
 .article-footer .social-links li {
     padding-left: 14px;
     color: #C5C5C5;
+}
+
+.article-footer .social-links li:hover {
+    color: #E58566;
+    margin-right: 5px;
 }
 
 .article-footer::before {
@@ -400,7 +410,7 @@ p {
 }
 
 .ig-images{
-    padding-left: 15px;
+    padding-left: 6px;
     padding-bottom: 20px;
 }
 
@@ -417,3 +427,33 @@ p {
     padding: 4px;
 }
 
+@media (max-width: 968px) {
+    
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 94%
+        
+    }
+
+    .articles {
+        margin-top: 50px;
+    }
+
+    .side-info {
+        width: 100%;
+    }
+
+.navbar {
+    height: 56px;
+}
+
+
+
+    
+    
+
+    
+
+}
