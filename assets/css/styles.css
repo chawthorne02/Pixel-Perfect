@@ -271,8 +271,14 @@ p {
 
 .ice-cream {
     height: 200px;
-    width: 300px;
-    padding-left: 24px;
+    width: 250px;
+    padding-left: 27px;
+    transition: 0.3s ease-in-out
+}
+
+.ice-cream:hover {
+    opacity: 0.3;
+    
 }
 
 .popular-bar h2 {
@@ -297,16 +303,27 @@ p {
 
 .popular-bar .llamas-pic {
     height: 200px;
-    width: 300px;
+    width: 250px;
     padding-left: 24px;
+    transition: 0.3s ease-in-out;
+}
+
+.popular-bar .llamas-pic:hover {
+    opacity: 0.3;
 }
 
 .popular-bar .pineapple-pic {
     height: 200px;
-    width: 300px;
+    width: 250px;
     padding-left: 24px;
     border-style: none;
+    transition: 0.3s ease-in-out;
 }
+
+.popular-bar .pineapple-pic:hover {
+    opacity: 0.3;
+}
+
 
 .latest-post {
     height: 117px;
@@ -337,6 +354,37 @@ p {
     padding-left: 26px;
 } 
 
+.latest-sidebar .skydive-pic:hover {
+    opacity: 0.3;
+}
+
+.latest-sidebar .skydive-pic {
+    transition: 0.3s ease-in-out;
+}
+
+.beachbum {
+    transition: 0.3s ease-in-out;
+}
+
+.beachbum:hover {
+    opacity: 0.3;
+}
+
+.airport {
+    transition: 0.3s ease-in-out;
+}
+
+.airport:hover {
+    opacity: 0.3;
+}
+
+.paintbrushes {
+    transition: 0.3s ease-in-out;
+}
+
+.paintbrushes:hover {
+    opacity: 0.3;
+}
 
 .latest-post h3 {
     padding-left: 156px;
@@ -386,6 +434,11 @@ p {
     font-weight: 500;
 }
 
+.footer-content h2:hover {
+    color: #E58566;
+    margin-right: 5px;
+}
+
 .footer-pics ul {
     display: flex;
     list-style: none;
@@ -422,9 +475,49 @@ p {
 }
 
 .ig-images img {
-    height: 150px;
-    width: 150px;
+    height: 135px;
+    width: 135px;
     padding: 4px;
+}
+
+.alleyway {
+    transition: 0.3s ease-in-out;
+}
+
+.alleyway:hover {
+    opacity: 0.3;
+}
+
+.basketball {
+    transition: 0.3s ease-in-out;
+}
+
+.basketball:hover {
+    opacity: 0.3;
+}
+
+.birds {
+    transition: 0.3s ease-in-out;
+}
+
+.birds:hover {
+    opacity: 0.3;
+}
+
+.city {
+    transition: 0.3s ease-in-out;
+}
+
+.city:hover {
+    opacity: 0.3;
+}
+
+.footer-img {
+    transition: 0.3s ease-in-out;
+}
+
+.footer-img:hover {
+    opacity: 0.3;
 }
 
 @media (max-width: 968px) {
