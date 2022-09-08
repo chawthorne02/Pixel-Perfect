@@ -52,6 +52,7 @@ header {
 .headersocial-links a:hover {
     color:#E58566;
     margin-right: 5px;
+    cursor: pointer;
 }
 
 
@@ -466,10 +467,12 @@ h3 {
     list-style: none;
     margin-top: 0px;
     margin-bottom: -4px;
+    padding: 0;
+    justify-content: space-evenly;
 }
 
 .footer-pics img {
-    width: 200px;
+    width: 100%;
     height: 200px;
 }
 
@@ -482,8 +485,9 @@ h3 {
     margin-top: 40px;
     background-color: #FFFFFF;
     border: 1px solid #E7E7E7;
-    padding-right: 0px;
+    padding-right: 28px;
     padding-left: 28px;
+    padding-bottom: 28px;
 }
 
 .ig-images{
@@ -550,19 +554,14 @@ h3 {
     opacity: 0.3;
 }
 
-.footer-img {
-    transition: 0.3s ease-in-out;
-}
 
-.footer-img:hover {
-    opacity: 0.3;
-}
+/* image wrapper for footer pics */
 
 .img-wrapper {
     position: relative;
     overflow: hidden;
     display: inline-block;
-    margin-right: 14px;
+    
 }
 
 .img-wrapper > img {
@@ -596,10 +595,10 @@ h3 {
 }
 
 .img-wrapper {
-    width: 130px;
-    height: 130px;
+    width: 100%;
+    height: 175px;
     position: relative;
-    margin-bottom: 10px;
+    margin-bottom:
 }
 
 .img-wrapper > .content.fade {
@@ -611,7 +610,53 @@ h3 {
     overflow: hidden;
 }
 
+/*image wrapper for ig feed images*/
 
+.img-wrapper2 {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    width: 150px;
+}
+
+.img-wrapper2 > img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: center;
+}
+
+.img-wrapper2 > .content {
+    position: absolute; 
+    inset: 0;
+    background: rgb(190, 103, 72, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.img-wrapper2 > .content p {
+    font-family: "Lato", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    padding: 3px;
+    color: #fff;
+}
+
+.img-wrapper2 > img,
+.img-wrapper2 > .content {
+     transition: 0.3s ease-in-out;
+}
+
+.img-wrapper2 > .content.fade {
+    opacity: 0;
+}
+
+.img-wrapper2 > .content.fade:hover {
+    opacity: 1;
+    overflow: hidden;
+}
 
 @media (max-width: 968px) {
     
