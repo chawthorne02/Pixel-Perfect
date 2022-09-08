@@ -476,6 +476,8 @@ p {
     margin-top: 40px;
     background-color: #FFFFFF;
     border: 1px solid #E7E7E7;
+    padding-right: 24px;
+    padding-left: 8px;
 }
 
 .ig-images{
@@ -548,6 +550,59 @@ p {
 
 .footer-img:hover {
     opacity: 0.3;
+}
+
+.img-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    padding-left: 20px;
+}
+
+.img-wrapper > img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: center;
+}
+
+.img-wrapper > .content {
+    position: absolute; 
+    inset: 0;
+    background: rgb(190, 103, 72, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.img-wrapper > .content p {
+    font-family: "Lato", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    padding: 3px;
+    color: #fff;
+}
+
+.img-wrapper > img,
+.img-wrapper > .content {
+     transition: 0.3s ease-in-out;
+}
+
+.img-wrapper {
+    width: 130px;
+    height: 130px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.img-wrapper > .content.fade {
+    opacity: 0;
+}
+
+.img-wrapper > .content.fade:hover {
+    opacity: 1;
+    overflow: hidden;
 }
 
 @media (max-width: 968px) {
