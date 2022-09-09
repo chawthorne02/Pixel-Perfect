@@ -61,11 +61,22 @@ header .navbar {
     padding-right: 367px
 }
 
-header .navbar a {
+.header-links {
     padding-left: 14px;
     text-decoration: none;
     color: #656565;
     font-size: small;
+    margin-top: 1px;
+    padding: 5px;
+    list-style: none;
+    color: #A3A3A3;
+}
+
+.header-links a {
+    padding: 9px;
+    text-decoration: none;
+    color: #656565;
+
 }
 
 header .navbar a:hover {
@@ -73,11 +84,6 @@ header .navbar a:hover {
     margin-right: 5px;
 }
 
-header li {
-    padding: 5px;
-    list-style: none;
-    color: #A3A3A3;
-}
 
 header li:hover {
     color:#E58566;
@@ -257,7 +263,7 @@ h3 {
     padding-right: 14px;
 }
 
-.profile-pic .social-links li {
+.profile-pic .social-links a {
     padding-left: 14px;
     border: solid 1px #C5C5C5;
     border-radius: 50%;
@@ -266,9 +272,11 @@ h3 {
     height: 24px;
     width: 26px;
     padding-top: 8px;
+    padding-left: 8px;
+    text-decoration: none;
 }
 
-.profile-pic .social-links li:hover{
+.profile-pic .social-links a:hover{
     background-color: #E58566;
     color: #fff;
     margin-right: 5px;
@@ -658,6 +666,24 @@ h3 {
     overflow: hidden;
 }
 
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+     height: 3px;
+     width: 100%;
+     background-color: #000;
+     border-radius: 10px;
+}
+
 @media (max-width: 968px) {
     
     .container{
@@ -680,8 +706,38 @@ h3 {
     height: 56px;
 }
 
+.toggle-button {
+    display: flex;
+    cursor: pointer;
+     
+}
 
 
+.toggle-button:hover {
+    color: #E58566;
+}
+
+.header-links {
+    display: none;
+    width: 100%;
+}
+
+.headersocial-links {
+    display: none;
+}
+
+.navbar {
+    flex-direction: column;
+     align-items: flex-start;
+}
+
+.header-links a {
+    flex-direction: column;
+}
+
+.footer-pics {
+    width: 100%;
+}
     
     
 
