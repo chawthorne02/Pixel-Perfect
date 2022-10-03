@@ -184,6 +184,8 @@ h3 {
     color: #E58566;
     border: solid 1px #E58566;
     margin-bottom: 50px;
+    height: 38px;
+    border-radius: 6px;
 }
 
 .continuebtn:hover {
@@ -295,7 +297,7 @@ h3 {
 }
 
 .ice-cream {
-    height: 200px;
+    height: 250px;
     width: 250px;
     padding-left: 27px;
     transition: 0.3s ease-in-out
@@ -329,9 +331,9 @@ h3 {
 }
 
 .popular-bar .llamas-pic {
-    height: 200px;
-    width: 250px;
-    padding-left: 24px;
+    /* height: 200px; */
+    width: 90%;
+    padding-left: 14px;
     transition: 0.3s ease-in-out;
 }
 
@@ -340,9 +342,9 @@ h3 {
 }
 
 .popular-bar .pineapple-pic {
-    height: 200px;
-    width: 250px;
-    padding-left: 24px;
+    height: auto;
+    width: 90%;
+    padding-left: 14px;
     border-style: none;
     transition: 0.3s ease-in-out;
 }
@@ -484,12 +486,9 @@ h3 {
     height: 200px;
 }
 
-.image-line {
-    flex-grow: 1;
-}
 
 .ig-feed {
-    width: 100%;
+    /* width: 100%; */
     margin-top: 40px;
     background-color: #FFFFFF;
     border: 1px solid #E7E7E7;
@@ -499,8 +498,10 @@ h3 {
 }
 
 .ig-images{
-    padding-left: 6px;
-    padding-bottom: 20px;
+    /* padding-left: 6px;
+    padding-bottom: 20px; */
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .ig-feed h2 {
@@ -513,7 +514,7 @@ h3 {
 .ig-images img {
     height: 135px;
     width: 135px;
-    padding: 4px;
+    /* padding: 4px; */
 }
 
 .footer-bottom {
@@ -580,7 +581,7 @@ h3 {
     object-position: center;
 }
 
-.img-wrapper > .content {
+.img-wrapper  .content {
     position: absolute; 
     inset: 0;
     background: rgb(190, 103, 72, 0.8);
@@ -590,7 +591,7 @@ h3 {
     
 }
 
-.img-wrapper > .content p {
+.img-wrapper  .content p {
     font-family: "Lato", Arial, Helvetica, sans-serif;
     font-weight: 400;
     padding: 3px;
@@ -606,14 +607,13 @@ h3 {
     width: 100%;
     height: 175px;
     position: relative;
-    margin-bottom:
 }
 
-.img-wrapper > .content.fade {
+.img-wrapper  .content.fade {
     opacity: 0;
 }
 
-.img-wrapper > .content.fade:hover {
+.img-wrapper  .content.fade:hover {
     opacity: 1;
     overflow: hidden;
 }
@@ -621,13 +621,21 @@ h3 {
 /*image wrapper for ig feed images*/
 
 .img-wrapper2 {
-    position: relative;
+    /* position: relative;
     overflow: hidden;
     display: inline-block;
-    width: 150px;
+    width: 150px; */
+    position: relative;
+    flex: 1 0 48%;
+    overflow: hidden;
+    margin-bottom: 5px;
 }
 
-.img-wrapper2 > img {
+.img-wrapper2:nth-child(even) {
+    margin-left: 5px;
+}
+
+.img-wrapper2 img {
     display: block;
     width: 100%;
     aspect-ratio: 1 / 1;
@@ -635,7 +643,7 @@ h3 {
     object-position: center;
 }
 
-.img-wrapper2 > .content {
+.img-wrapper2  .content {
     position: absolute; 
     inset: 0;
     background: rgb(190, 103, 72, 0.8);
@@ -645,30 +653,30 @@ h3 {
     
 }
 
-.img-wrapper2 > .content p {
+.img-wrapper2  .content p {
     font-family: "Lato", Arial, Helvetica, sans-serif;
     font-weight: 400;
     padding: 3px;
     color: #fff;
 }
 
-.img-wrapper2 > img,
-.img-wrapper2 > .content {
+.img-wrapper2 img,
+.img-wrapper2 .content {
      transition: 0.3s ease-in-out;
 }
 
-.img-wrapper2 > .content.fade {
+.img-wrapper2 .content.fade {
     opacity: 0;
 }
 
-.img-wrapper2 > .content.fade:hover {
+.img-wrapper2  .content.fade:hover {
     opacity: 1;
     overflow: hidden;
 }
 
 .toggle-button {
     position: absolute;
-    top: .75rem;
+    /*top: .75rem;*/
     right: 1rem;
     display: none;
     flex-direction: column;
@@ -684,23 +692,32 @@ h3 {
      border-radius: 10px;
 }
 
-@media (max-width: 968px) {
+i.fa-regular.fa-heart {
+    color: #fff;
+}
+
+i.fa-regular.fa-comment {
+    color: #fff;
+}
+
+@media (max-width: 768px) {
     
-    .container{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 94%
+.container{
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 94%
         
-    }
+}
 
-    .articles {
-        margin-top: 50px;
-    }
+.articles {
+     margin-top: 50px;
+ }
 
-    .side-info {
-        width: 100%;
-    }
+.side-info {
+ width: 100%;
+ margin-right: 30px;
+}
 
 .navbar {
     height: 56px;
@@ -711,7 +728,6 @@ h3 {
     cursor: pointer;
      
 }
-
 
 .toggle-button:hover {
     color: #E58566;
@@ -733,14 +749,46 @@ h3 {
 
 .header-links a {
     flex-direction: column;
+    width: 100%;
+    text-align: center;
+}
+
+.header-links.active {
+    display: flex;
 }
 
 .footer-pics {
     width: 100%;
 }
-    
-    
 
-    
-
+.img-wrapper {
+    width: 100%;
 }
+    
+.popular-bar {
+    width: 94%;
+    padding: 0 23px;
+}
+
+.ice-cream{
+    height: 350px;
+    width: 90%;
+}
+
+.llamas-pic {
+    height: auto;
+    width: 90%;
+}
+
+.pineapple-pic {
+    width: 90%;
+    height: auto;
+}
+
+.footer-pic li:nth-child(n+5){
+    display: none;
+}
+
+
+
+}   
