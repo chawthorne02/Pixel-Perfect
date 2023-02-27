@@ -725,6 +725,7 @@ i.fa-regular.fa-comment {
 
 .navbar {
     height: 56px;
+    padding-right: 0px;
 }
 
 .toggle-button {
@@ -737,6 +738,11 @@ i.fa-regular.fa-comment {
     color: #E58566;
 }
 
+header .navbar {
+    padding-right: 0px;
+    z-index: 1;
+}
+
 .header-links {
     display: none;
     width: 100%;
@@ -746,6 +752,10 @@ i.fa-regular.fa-comment {
     display: none;
 }
 
+.header-links ul {
+    flex-direction: column;
+}
+
 .navbar {
     flex-direction: column;
      align-items: flex-start;
@@ -753,12 +763,16 @@ i.fa-regular.fa-comment {
 
 .header-links a {
     flex-direction: column;
-    width: 100%;
+    /* width: 100%; */
     text-align: center;
+    font-size: x-large;
 }
 
 .header-links.active {
     display: flex;
+    flex-direction: column;
+    margin-top: 29px;
+    background-color: #fff;
 }
 
 .footer-pics {
